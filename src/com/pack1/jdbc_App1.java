@@ -9,7 +9,7 @@ public class jdbc_App1 {
 	 public String driver="com.mysql.cj.jdbc.Driver";
 	 public String dburl="jdbc:mysql://localhost:3306/bankapp";
 	 public String username="root";
-	 public String password="Qwer1357!";
+	 public String password="your_password";
 	 
 	 public void connect() {
 		 System.out.println("connecting to database");
