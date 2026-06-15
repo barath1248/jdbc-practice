@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class jdbc_App4 {
   private static final String driver="com.mysql.cj.jdbc.Driver";
-  private static final String dburl="jdbc:mysql://localhost:3306/bankapp";
+  private static final String dburl="jdbc:mysql://localhost:3306/db_name";
   private static final String username="root";
-  private static final String password="Qwer1357!";
+  private static final String password="Your_password";
   private static String id;
   private static String Fname;
   private static String Lname;
