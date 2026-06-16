@@ -8,7 +8,7 @@ public class jdbc_App6 {
 	 private static final String driver="com.mysql.cj.jdbc.Driver";
 	 private static final String dburl="jdbc:mysql://localhost:3306/bankapp";
 	 private static final String username="root";
-	 private static final String password="Qwer1357!";
+	 private static final String password="your_password";
 	static Scanner sc=new Scanner(System.in);
 	 
 	 public static Connection connect() {
