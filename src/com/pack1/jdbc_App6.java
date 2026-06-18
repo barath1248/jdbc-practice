@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Scanner;
 import java.sql.ResultSet;
-public class jdbc_App6 {
+public class Jdbc_App6 {
 	 private static final String driver="com.mysql.cj.jdbc.Driver";
 	 private static final String dburl="jdbc:mysql://localhost:3306/bankapp";
 	 private static final String username="root";
@@ -24,7 +24,7 @@ public class jdbc_App6 {
 	 }
 	 
 	 void Operations(){
-		 Connection con=jdbc_App6.connect();
+		 Connection con=Jdbc_App6.connect();
 		 String sql1="insert into patient values(?,?,?,?)";
 		 String sql2="select * from patient where pid=?";
 		 String sql3="update  patient set pcontact=? where pid=?";
@@ -117,7 +117,7 @@ public class jdbc_App6 {
 		 }
 	 }
 	 public static void main(String[] args) {
-		new jdbc_App6().Operations();
+		new Jdbc_App6().Operations();
 	}
 }
  

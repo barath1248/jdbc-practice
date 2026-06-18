@@ -4,11 +4,11 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class jdbc_App4 {
+public class Jdbc_App4 {
   private static final String driver="com.mysql.cj.jdbc.Driver";
-  private static final String dburl="jdbc:mysql://localhost:3306/db_name";
+  private static final String dburl="jdbc:mysql://localhost:3306/bankapp";
   private static final String username="root";
-  private static final String password="Your_password";
+  private static final String password="Qwer1357!";
   private static String id;
   private static String Fname;
   private static String Lname;
@@ -29,7 +29,7 @@ public class jdbc_App4 {
   
   public void insert_employee() {
 	  try {
-		  Connection con=jdbc_App4.connect();
+		  Connection con=Jdbc_App4.connect();
 		  Statement stmt=con.createStatement();
 	
 		  System.out.println("Enter id:");
@@ -52,7 +52,7 @@ public class jdbc_App4 {
 			  System.out.println("Do you want to see the data: Yes/No?");
 			  char value=sc.nextLine().charAt(0);
 			  switch(value) {
-			  case 'y','Y': new jdbc_App2().get_empdata();
+			  case 'y','Y': new Jdbc_App2().get_empdata();
 			                break;
 			  case 'N','n': System.out.println("Thanks for inserting the data");
 			  }
@@ -64,7 +64,7 @@ public class jdbc_App4 {
 	  }
   }
   public static void main(String[] args) {
-	 new jdbc_App4().insert_employee();
+	 new Jdbc_App4().insert_employee();
 }
   
 }

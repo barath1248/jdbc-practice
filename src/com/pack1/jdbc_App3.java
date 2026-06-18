@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class jdbc_App3 {
+public class Jdbc_App3 {
 
 	public String driver = "com.mysql.cj.jdbc.Driver";
 	public String dburl = "jdbc:mysql://localhost:3306/bankapp";
@@ -69,7 +69,7 @@ public class jdbc_App3 {
 
 		String name = scn.nextLine();
 
-		new jdbc_App3().emp_data(name);
+		new Jdbc_App3().emp_data(name);
 
 		scn.close();
 	}

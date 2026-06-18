@@ -5,11 +5,11 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
 
-public class jdbc_App2 {
+public class Jdbc_App2 {
 	 private String driver="com.mysql.cj.jdbc.Driver";
 	 private String dburl="jdbc:mysql://localhost:3306/bankapp";
 	 private String username="root";
-	 private String password="your_password";
+	 private String password="Qwer1357!";
 	 private String sqlQuery="select * from Employee";
 	 
 	 public Connection connect() {
@@ -38,6 +38,6 @@ public class jdbc_App2 {
 		 }
 	 }
 	 public static void main(String[] args) {
-		new jdbc_App2().get_empdata();
+		new Jdbc_App2().get_empdata();
 	}
 }
