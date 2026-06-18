@@ -25,4 +25,5 @@ This repository is created to improve my understanding of Java Database Connecti
 - APP2-> Retrieving data from database
 - APP3-> Retrieving specific data from database
 - APP4->Inserting data into database
-- APP6-> CRUD OPERATIONS
+- APP6-> CRUD operations
+- APP7->Scrollable resultset
