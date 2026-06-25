@@ -31,3 +31,5 @@ This repository is created to improve my understanding of Java Database Connecti
 - App9 ->RowSet
 - App10->Callable Statement
 - App11->Transaction Management
+-App12 -> TASK COMPLETION
+-APP13-> HARD TASK
