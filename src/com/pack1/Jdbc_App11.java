@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.util.Scanner;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Savepoint;
 
 public class Jdbc_App11 {
 	private static final String driver = "com.mysql.cj.jdbc.Driver";
@@ -49,7 +48,7 @@ public class Jdbc_App11 {
 			} else {
 				throw new RuntimeException("No Seats Available!");
 			}
-			Savepoint sp = con.setSavepoint();
+	//		Savepoint sp = con.setSavepoint();
 			PreparedStatement pstmt2 = con.prepareStatement(sqlQuery2);
 			pstmt2.setString(1, "B101");
 			pstmt2.setString(2, "12345");
