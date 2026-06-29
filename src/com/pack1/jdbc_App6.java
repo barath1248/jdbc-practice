@@ -8,7 +8,7 @@ public class Jdbc_App6 {
 	 private static final String driver="com.mysql.cj.jdbc.Driver";
 	 private static final String dburl="jdbc:mysql://localhost:3306/bankapp";
 	 private static final String username="root";
-	 private static final String password="your_password";
+	 private static final String password="Qwer1357!";
 	static Scanner sc=new Scanner(System.in);
 	 
 	 public static Connection connect() {
@@ -120,4 +120,14 @@ public class Jdbc_App6 {
 		new Jdbc_App6().Operations();
 	}
 }
+
+/*
+ *  PATIENT TABLE->PID      VARCHAR(5) NOT NULL 
+ *                 PNAME    VARCHAR(15) 
+ *                 AGE      VARCHAR(5)  
+ *                 PCONTACT INTEGER(12)
+ *                 
+ *  CREATE TABLE PATIENT(PID  VARCHAR(5) NOT NULL, PNAME VARCHAR(15) , AGE VARCHAR(5) , PCONTACT INTEGER(12));
+ */
+ 
  

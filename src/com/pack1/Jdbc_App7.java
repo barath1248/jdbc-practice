@@ -96,3 +96,12 @@ public class Jdbc_App7 {
 		new Jdbc_App7().meth3();
 	}
 }
+
+/*
+ * Database schema
+ *  Employee table-> EID      VARCHAR(20)     PRIMARY KEY 
+ *                   EFNAME   VARCHAR(20) 
+ *                   ELNAME   VARCHAR(20) 
+ *                   ESAL     INTEGER(10) 
+ *                   EADDRESS VARCHAR(20)
+ */

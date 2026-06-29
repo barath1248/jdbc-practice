@@ -98,3 +98,34 @@ public class Jdbc_APP10 {
 		obj.meth3();
 	}
 }
+
+/*
+ * -------------STORED PROCEDURE AND FUNCTION -------
+ * 
+ * ------FUNCTION-----
+ * 
+ * DELIMITER $$
+   CREATE FUNCTION RetrieveTotalSal(E_id VARCHAR(10))
+   RETURNS INT
+   DETERMINISTIC
+   BEGIN
+    DECLARE tsal INT;
+    SELECT ETOT_SAL INTO tsal FROM EMPSAL WHERE EID = E_id;
+    RETURN tsal;
+   END $$
+   DELIMITER ;
+
+----------------------------------------------------------------------------------------------------------------------
+
+-------PROCEDURE----------
+
+DELIMITER $$
+CREATE PROCEDURE RetriveEmpData(IN id VARCHAR(10), OUT e_name  VARCHAR(10), OUT e_desg  VARCHAR(10), OUT bsal  INT , OUT tsal  INT)
+begin
+ select ENAME , EDESG into e_name ,e_desg from EMPDATA where EID=id;
+ select EBAS_SAL , ETOT_SAL into bsal, tsal from EMPSAL where EID=id;
+ end $$
+ DELIMITER ;
+ 
+ ---------------------------------------------------------------------------------------------------------------------
+ */

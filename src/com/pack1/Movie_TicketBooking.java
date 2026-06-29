@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Savepoint;
+//import java.sql.Savepoint;
 
 public class Movie_TicketBooking {
 	private static final String driver = "com.mysql.cj.jdbc.Driver";
@@ -106,7 +106,7 @@ public class Movie_TicketBooking {
 								;
 							}
 						}
-						Savepoint sp = con.setSavepoint();
+	//					Savepoint sp = con.setSavepoint();
 					} else {
 						System.out.println("Seat already booked!");
 					}
@@ -193,3 +193,20 @@ public class Movie_TicketBooking {
 		obj.meth1();
 	}
 }
+
+/*
+ * Database Schema
+ * MovieSeatAvailability table-> movie_id         VARACHAR(10)
+ *                               movie_name       VARCHAR(10)
+ *                               Available_seats  INTEGER
+ *                               total_seats      INTEGER
+ *                               
+ *MovieBookingDetails table ->   booking_id       VARCHAR(10)
+ *                               movie_id         VARCHAR(10)
+ *                               customer_id      VARCHAR(10)
+ *                               seat_number      INTEGER
+ *                               status           VARCHAR(20)
+ *                               
+ *customer_Payment_details ->    customer_id     VARCHAR(10)
+ *                               payment_status  VARCHAR(20)
+ */                            

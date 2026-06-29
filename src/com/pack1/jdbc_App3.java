@@ -11,7 +11,7 @@ public class Jdbc_App3 {
 	public String driver = "com.mysql.cj.jdbc.Driver";
 	public String dburl = "jdbc:mysql://localhost:3306/bankapp";
 	public String username = "root";
-	public String password = "your_password";
+	public String password = "Qwer1357!";
 
 	public Connection connect() {
 		Connection con = null;
@@ -74,3 +74,11 @@ public class Jdbc_App3 {
 		scn.close();
 	}
 }
+/*
+ * Database schema
+ *  Employee table-> EID      VARCHAR(20)     PRIMARY KEY 
+ *                   EFNAME   VARCHAR(20) 
+ *                   ELNAME   VARCHAR(20) 
+ *                   ESAL     INTEGER(10) 
+ *                   EADDRESS VARCHAR(20)
+ */

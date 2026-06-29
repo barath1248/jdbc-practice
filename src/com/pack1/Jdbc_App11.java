@@ -88,3 +88,15 @@ public class Jdbc_App11 {
 		obj.meth1();
 	}
 }
+
+/*
+ * 
+ * DATABASE COMMANDS
+ * -----------------
+ * 
+ *  CREATE TABLE trainseatavailability ( TRAIN_ID   VARCHAR(10), JOURNEY_DATE VARCHAR(10), CLASS VARCHAR(10),AVAILABLE_SEATS INTEGER(5) );
+  CREATE TABLE bookingdetails ( BOOKING_ID VARCHAR(10),TRAIN_ID   VARCHAR(10), CUSTOMER_ID VARCHAR(10), SEAT_NUMBER INTEGER(3),STATUS VARCHAR(20) );
+ CREATE TABLE customerpayment ( PAYMENT_ID   VARCHAR(10), CUSTOMER_ID VARCHAR(10), AMOUNT DECIMAL(10,2),PAYMENT_STATUS VARCHAR(20) );
+insert into trainseatavailability values('12345','2024-10-10','sleeper',10);
+insert into customerpayment values('p1001','c123',500,'success');
+ */

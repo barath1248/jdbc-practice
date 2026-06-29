@@ -77,3 +77,11 @@ public class Jdbc_App12 {
 				obj.meth1();
 	}
 }
+
+/*
+  DATABASE COMMANDS:
+  ------------------
+  CREATE TABLE bank_account(acc_no INTEGER PRIMARY KEY, acc_holder_name VARCHAR(100),balance DECIMAL(10,2));
+   insert into bank_account values(101,'Alice',5000);
+   insert into bank_account values(102,'Bob',2000);
+ */
